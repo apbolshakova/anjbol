@@ -1,0 +1,201 @@
+.train-figure {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+}
+
+.steam1 {
+    position: relative;
+
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 24px solid rgb(241, 83, 206);
+
+    top: 9px;
+    left: 126px;
+    transform: rotate(28deg);
+}
+
+.steam1:before {
+    content: "";
+    position: absolute;
+
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 24px solid rgb(241, 83, 206);
+
+    top: 25px;
+    left: -40px;
+}
+
+.steam1:after {
+    content: "";
+    position: absolute;
+
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 24px solid rgb(241, 83, 206);
+
+    top: 56px;
+    left: -60px;
+}
+
+.steam2 {
+    position: relative;
+
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 24px solid rgb(241, 83, 206);
+
+    top: -15px;
+    left: 121px;
+    transform: rotate(-26deg);
+}
+
+.steam2:before {
+    content: "";
+    position: absolute;
+
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 24px solid rgb(241, 83, 206);
+
+    top: -7px;
+    left: -48px;
+}
+
+.steam2:after {
+    content: "";
+    position: absolute;
+
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 24px solid rgb(241, 83, 206);
+
+    top: -6px;
+    left: -84px;
+}
+
+.wheels {
+    position: relative;
+
+    width: 17px;
+    height: 15px;
+    border: 10px solid rgb(1, 1, 1);
+    border-radius: 50%;
+
+    top: 106px;
+    left: 41px;
+}
+
+.wheels:before {
+    content: "";
+    position: absolute;
+
+    width: 17px;
+    height: 15px;
+    border: 10px solid rgb(1, 1, 1);
+    border-radius: 50%;
+
+    top: -10px;
+    left: 38px;
+}
+
+.wheels:after {
+    content: "";
+    position: absolute;
+
+    width: 17px;
+    height: 15px;
+    border: 10px solid rgb(1, 1, 1);
+    border-radius: 50%;
+
+    top: -10px;
+    left: 83px;
+}
+
+.van {
+    position: relative;
+
+    width: 105px;
+    height: 48px;
+    border-radius: 5px;
+    background: rgb(74, 72, 73);
+    background: -moz-linear-gradient(0deg, rgba(74, 72, 73, 1) 0%, rgba(147, 157, 149, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(74, 72, 73, 1) 0%, rgba(147, 157, 149, 1) 100%);
+    background: linear-gradient(0deg, rgba(74, 72, 73, 1) 0%, rgba(147, 157, 149, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4849", endColorstr="#939d95", GradientType=1);
+
+    top: 35px;
+    left: 74px;
+}
+
+.van:before {
+    content: "";
+    position: absolute;
+
+    width: 48px;
+    height: 45px;
+    border-radius: 45%;
+    background: rgb(147, 157, 149);
+
+    top: 3px;
+    left: -53px;
+}
+
+.van:after {
+    content: "";
+    position: absolute;
+
+    width: 49px;
+    height: 60px;
+    border-radius: 5px;
+    background: rgb(74, 72, 73);
+    background: -moz-linear-gradient(270deg, rgba(74, 72, 73, 1) 0%, rgba(147, 157, 149, 1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(74, 72, 73, 1) 0%, rgba(147, 157, 149, 1) 100%);
+    background: linear-gradient(270deg, rgba(74, 72, 73, 1) 0%, rgba(147, 157, 149, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a4849", endColorstr="#939d95", GradientType=1);
+
+    top: -12px;
+    left: -38px;
+}
+
+.details {
+    position: relative;
+
+    width: 23px;
+    height: 10px;
+    background: rgb(51, 49, 50);
+
+    top: -60px;
+    left: 45px;
+}
+
+.details:before {
+    content: "";
+    position: absolute;
+
+    width: 15px;
+    height: 35px;
+    background: rgb(51, 49, 50);
+
+    top: 0px;
+    left: 4px;
+}
+
+.details:after {
+    content: "";
+    position: absolute;
+
+    width: 20px;
+    height: 28px;
+    border-radius: 8px;
+    background: rgb(152, 198, 231);
+    
+    top: 47px;
+    left: 8px;
+}

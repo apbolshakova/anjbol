@@ -1,0 +1,105 @@
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 275px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.boy,
+.petard {
+    background-repeat: no-repeat;
+}
+
+.comment {
+    align-self: flex-start;
+    margin-top: 40px;
+    width: 1px;
+    z-index: 1;
+    white-space: nowrap;
+    color: #312c2e;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bolder;
+}
+
+.boy {
+    transition: all 0.2s ease-out;
+    background-image: url(./../img/flexbox/elka.jpg);
+    background-position: bottom center;
+    width: 300px;
+    height: 260px;
+}
+
+.petard {
+    background-image: url(./../img/flexbox/pet.jpg);
+    width: 31px;
+    height: 74px;
+    opacity: 0;
+}
+
+.flexbox:hover .boy {
+    animation-duration: 0.5s;
+    animation-name: changePicture;
+    background-image: url(./../img/flexbox/boy.jpg);
+}
+
+.flexbox:hover .petard {
+    transition: all 0.5s ease-out;
+    opacity: 1;
+}
+
+.flexbox:hover .comment:after {
+    content: "Нажми !!!";
+    text-shadow: 1px 3px 3px #6e7278;
+}
+
+.flexbox:active .boy {
+    background-image: url(./../img/flexbox/boy2.jpg);
+    animation-duration: 0.2s;
+    animation-name: shaking;
+    animation-iteration-count: infinite;
+}
+
+.flexbox:active .petard {
+    transform: translate(0, -100vh);
+}
+
+.flexbox:active .comment {
+    margin-top: 140px;
+}
+
+.flexbox:active .comment:after {
+    content: "Ужас !!!";
+    text-shadow: none;
+}
+
+@keyframes changePicture {
+    from {
+        background-size: 0 0;
+    }
+
+    to {
+        background-size: 260px 255px;
+    }
+}
+
+@keyframes shaking {
+    from {
+        background-position-x: -20px;
+    }
+
+    50% {
+        background-position-x: 20px;
+    }
+
+    to {
+        background-position-x: -20px
+    }
+}
+
+@media (max-width: 767px) {
+    .flexbox {
+        max-width: 300px;
+    }
+}
