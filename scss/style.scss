@@ -4,8 +4,8 @@ $dark_bg: #1b1b1b;
 $medium_bg: #424242;
 $light_bg: #6d6d6d;
 
-$dark_text: #e0e0e0;
-$medium_text: #fafafa;
+$dark_text: #6d6d6d;
+$medium_text: #e0e0e0;
 $light_text: #ffffff;
 
 $details_color:#00a695;
@@ -42,22 +42,19 @@ span {
 
 .primary-btn {
     background-color: $details_color;
-    padding: 12px;
-    width: 180px;
+    padding: 18px;
+    width: 200px;
     border-radius: 30px;
     border-color: rgba($color: #000000, $alpha: 0);
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
 
     &:hover {
         background-color: $btn_hover_color;
         transition: all 0.1s ease-out;
     }
-
-    &__text {
-        font-size: 18px;
-        font-weight: 700;
-    }
-
 }
 
 .b-main-container {
@@ -80,6 +77,7 @@ span {
         grid-area: scroll;
         overflow: auto;
         height: auto;
+        scroll-behavior: smooth;
 
         &:-webkit-scrollbar {
             display: none;
@@ -87,6 +85,21 @@ span {
 
         -ms-overflow-style: none;
         scrollbar-width: none;
+    }
+
+    &__up-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 32px;
+        background-color: $details_color;
+        border-radius: 50%;
+        padding: 10px;
+
+        &:hover {
+            transition: all 0.1s ease-out;
+            background-color: $btn_hover_color;
+        }
     }
 }
 
@@ -154,9 +167,15 @@ span {
     }
 
     &__icon {
-        font-size: 18px;
+        font-size: 24px;
         color: $light_text;
         padding-left: 18px;
+        cursor: pointer;
+
+        &:hover {
+            transition: all 0.1s ease-out;
+            color: $dark_text;
+        }
     }
 }
 

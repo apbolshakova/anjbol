@@ -36,39 +36,37 @@
             <ul class="b-nav-wrapper__nav-menu-container b-nav-menu-container">
                 <li class="b-nav-menu-container__nav-menu-item b-nav-menu-item">
                     <span class="material-icons b-nav-menu-item__icon">home</span>
-                    <a class="b-nav-menu-item__link" href="#">Главная</a>
+                    <a class="b-nav-menu-item__link" href="#home">Главная</a>
                 </li>
                 <li class="b-nav-menu-container__nav-menu-item b-nav-menu-item">
                     <span class="material-icons b-nav-menu-item__icon">person</span>
-                    <a class="b-nav-menu-item__link" href="#">Обо мне</a>
+                    <a class="b-nav-menu-item__link" href="#about">Обо мне</a>
                 </li>
                 <li class="b-nav-menu-container__nav-menu-item b-nav-menu-item">
                     <span class="material-icons b-nav-menu-item__icon">work</span>
-                    <a class="b-nav-menu-item__link" href="#">Портфолио</a>
+                    <a class="b-nav-menu-item__link" href="#portfolio">Портфолио</a>
                 </li>
                 <li class="b-nav-menu-container__nav-menu-item b-nav-menu-item">
                     <span class="material-icons b-nav-menu-item__icon">web</span>
-                    <a class="b-nav-menu-item__link" href="#">Задания</a>
+                    <a class="b-nav-menu-item__link" href="#tasks">Задания</a>
                 </li>
             </ul>
         </nav>
         <div class="b-main-container__scroll-wrapper b-scroll-wrapper">
-            <header class="b-scroll-wrapper__header-wrapper b-header-wrapper">
+            <header id="home" class="b-scroll-wrapper__header-wrapper b-header-wrapper">
                 <h2 class="b-header-wrapper__title">ANJBOL</h2>
-                <i class="fab fa-vk b-header-wrapper__icon"></i>
-                <i class="fab fa-github b-header-wrapper__icon"></i>
+                <a target="_blank" rel="noopener noreferrer" href="https://vk.com/ju.lody" class="fab fa-vk b-header-wrapper__icon"></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/julody" class="fab fa-github b-header-wrapper__icon"></a>
             </header>
             <main class="b-scroll-wrapper__content-wrapper b-content-wrapper">
                 <article class="b-content-wrapper__article-wrapper b-content-wrapper__article-wrapper_home b-article-wrapper">
                     <div class="b-article-wrapper__info-container b-article-wrapper__info-container_home b-info-container">
                         <div class="b-info-container_home__photo"></div>
                         <h1 class="b-info-container_home__name">Большакова<br />Анжела</h1>
-                        <button href="#" class="primary-btn b-info-container_home__btn">
-                            <span class="primary-btn__text">Задания</span>
-                        </button>
+                        <a href="#tasks" class="primary-btn b-info-container_home__btn">Задания</a>
                     </div>
                 </article>
-                <article class="b-content-wrapper__article-wrapper b-content-wrapper__article-wrapper_light b-article-wrapper">
+                <article id="about" class="b-content-wrapper__article-wrapper b-content-wrapper__article-wrapper_light b-article-wrapper">
                     <div class="b-article-wrapper__info-container b-article-wrapper__info-container_about b-info-container">
                         <div class="b-info-container__title-container b-title-container">
                             <h2 class="b-title-container__title">Обо мне</h2>
@@ -89,17 +87,18 @@
                         </button>-->
                     </div>
                 </article>
-                <article class="b-content-wrapper__article-wrapper b-article-wrapper">
+                <article id="portfolio" class="b-content-wrapper__article-wrapper b-article-wrapper">
                     <div class="b-article-wrapper__info-container b-article-wrapper__info-container_portfolio b-info-container">
                         <div class="b-info-container__title-container b-title-container">
                             <h2 class="b-title-container__title">Портфолио</h2>
                         </div>
                         <div class="b-info-container_portfolio__categories-container b-categories-container">
-                            <span class="b-categories-container__item">Разработка</span>
-                            <span class="b-categories-container__item b-categories-container__item_active">Рисование</span>
+                            <span class="b-categories-container__item b-categories-container__item_active">Разработка</span>
+                            <span class="b-categories-container__item">Рисование</span>
                         </div>
                         <div class="b-info-container_portfolio__projects-container b-projects-container">
                             <div class="b-projects-container__dev-container">
+                                <img class="b-dev-container__item" src="img/projects/devs/dev1.jpg" />
                             </div>
                             <div class="b-projects-container__paintings-container b-paintings-container">
                                 <img class="b-paintings-container__item" src="img/projects/paintings/painting1.jpg" />
@@ -110,7 +109,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="b-content-wrapper__article-wrapper b-content-wrapper__article-wrapper_light b-article-wrapper">
+                <article id="tasks" class="b-content-wrapper__article-wrapper b-content-wrapper__article-wrapper_light b-article-wrapper">
                     <div class="b-article-wrapper__info-container b-article-wrapper__info-container_tasks b-info-container">
                         <div class="b-info-container__title-container b-title-container">
                             <h2 class="b-title-container__title">Задания</h2>
@@ -160,7 +159,9 @@
                 <span class="b-footer-wrapper__date">2020 год.</span>
             </footer>
         </div>
+        <a href="#home" class="material-icons b-main-container__up-btn">arrow_upward</a>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
