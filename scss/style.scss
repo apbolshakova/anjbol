@@ -78,13 +78,6 @@ span {
         overflow: auto;
         height: auto;
         scroll-behavior: smooth;
-
-        &:-webkit-scrollbar {
-            display: none;
-        }
-
-        -ms-overflow-style: none;
-        scrollbar-width: none;
     }
 
     &__up-btn {
@@ -151,8 +144,10 @@ span {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-right: 60px;
+        padding: 0 30px;
         height: 60px;
+        background-color: $dark_bg;
+        z-index: 2;
     }
 
     &__footer-wrapper {
@@ -164,6 +159,8 @@ span {
     &__title {
         padding-right: 18px;
         border-right: $border;
+        flex-grow: 1;
+        text-align: end;
     }
 
     &__icon {
@@ -175,6 +172,12 @@ span {
         &:hover {
             transition: all 0.1s ease-out;
             color: $dark_text;
+        }
+
+        &_mobile-menu {
+            font-size: 32px;
+            cursor: pointer;
+            display: none;
         }
     }
 }
@@ -440,6 +443,30 @@ span {
 
         &__nav-wrapper {
             display: none;
+
+            &.active {
+                display: block;
+                position: fixed;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .b-scroll-wrapper {
+        &__header-wrapper {
+            position: sticky;
+            top: 0;
+        }
+    }
+
+    .b-header-wrapper {
+        &__icon {
+            &_mobile-menu {
+                display: inline;
+            }
         }
     }
 
