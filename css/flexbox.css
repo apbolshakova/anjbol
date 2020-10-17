@@ -2,20 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 275px;
+    height: 13.75em;
     width: 100%;
     background-color: #ffffff;
+    font-size: 20px;
 }
 
 .boy,
 .petard {
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .comment {
     align-self: flex-start;
-    margin-top: 40px;
-    width: 1px;
+    margin-top: 2em;
+    width: 0.05em;
     z-index: 1;
     white-space: nowrap;
     color: #312c2e;
@@ -27,14 +29,14 @@
     transition: all 0.2s ease-out;
     background-image: url(./../img/flexbox/elka.jpg);
     background-position: bottom center;
-    width: 300px;
-    height: 260px;
+    width: 15em;
+    height: 13em;
 }
 
 .petard {
     background-image: url(./../img/flexbox/pet.jpg);
-    width: 31px;
-    height: 74px;
+    width: 1.55em;
+    height: 3.7em;
     opacity: 0;
 }
 
@@ -51,7 +53,7 @@
 
 .flexbox:hover .comment:after {
     content: "Нажми !!!";
-    text-shadow: 1px 3px 3px #6e7278;
+    text-shadow: 0.05em 0.15em 0.15em #6e7278;
 }
 
 .flexbox:active .boy {
@@ -62,11 +64,11 @@
 }
 
 .flexbox:active .petard {
-    transform: translate(0, -100vh);
+    transform: translate(0, -101vh);
 }
 
 .flexbox:active .comment {
-    margin-top: 140px;
+    margin-top: 7em;
 }
 
 .flexbox:active .comment:after {
@@ -80,26 +82,26 @@
     }
 
     to {
-        background-size: 260px 255px;
+        background-size: 13em 12.75em;
     }
 }
 
 @keyframes shaking {
     from {
-        background-position-x: -20px;
+        background-position-x: -1em;
     }
 
     50% {
-        background-position-x: 20px;
+        background-position-x: 1em;
     }
 
     to {
-        background-position-x: -20px
+        background-position-x: -1em;
     }
 }
 
 @media (max-width: 767px) {
     .flexbox {
-        max-width: 300px;
+        max-width: 15em;
     }
 }
