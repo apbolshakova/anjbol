@@ -308,8 +308,9 @@ span {
     &__item {
         font-size: 24px;
         font-weight: 700;
+        cursor: pointer;
 
-        &_active {
+        &.active {
             color: $details_color;
             border-bottom: solid 3px $details_color;
         }
@@ -318,18 +319,20 @@ span {
     padding-bottom: 30px;
 }
 
-.b-projects-container {
+.b-projects-wrapper {
 
-    &__dev-container,
-    &__paintings-container {
-        display: flex;
+    &__projects-container {
+        display: none;
         align-items: center;
         justify-content: space-between;
+        
+        &.active {
+            display: flex;
+        }
     }
 }
 
-.b-dev-container,
-.b-paintings-container {
+.b-projects-container {
     &__item {
         width: 23%;
     }
@@ -403,16 +406,14 @@ span {
         }
     }
 
-    .b-projects-container {
+    .b-projects-wrapper {
 
-        &__dev-container,
-        &__paintings-container {
+        &__projects-container {
             flex-wrap: wrap;
         }
     }
 
-    .b-dev-container,
-    .b-paintings-container {
+    .b-projects-container {
         &__item {
             width: 48%;
         }
