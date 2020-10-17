@@ -339,6 +339,10 @@ span {
 .b-projects-container {
     &__item {
         width: 23%;
+
+        img {
+            width: 100%;
+        }
     }
 }
 

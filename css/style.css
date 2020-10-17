@@ -262,6 +262,9 @@ span {
 .b-projects-container__item {
   width: 23%;
 }
+.b-projects-container__item img {
+  width: 100%;
+}
 
 .b-tasks-container__task-item {
   background-color: #1b1b1b;
