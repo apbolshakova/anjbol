@@ -66,11 +66,11 @@ span {
 .b-main-container__up-btn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 40px;
   font-size: 32px;
   background-color: #00a695;
   border-radius: 50%;
-  padding: 10px;
+  padding: 5px;
 }
 .b-main-container__up-btn:hover {
   transition: all 0.1s ease-out;
@@ -225,6 +225,7 @@ span {
 .b-info-container_tasks__tasks-container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .b-title-container__title {
@@ -264,6 +265,10 @@ span {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.b-tasks-container__task-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .b-task-item__icon {

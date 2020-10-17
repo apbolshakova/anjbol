@@ -34,6 +34,6 @@ function showParams() {
         + "\nДиаметр: " + getDiam(r)
         + "\nПериметр: " + getPerim(r)
         + "\nПлощадь: " + getSquare(r));
-}
 
-showParams();
+    alert("Результат в консоли!");
+}

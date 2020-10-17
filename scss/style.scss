@@ -90,11 +90,11 @@ span {
     &__up-btn {
         position: fixed;
         bottom: 20px;
-        right: 20px;
+        right: 40px;
         font-size: 32px;
         background-color: $details_color;
         border-radius: 50%;
-        padding: 10px;
+        padding: 5px;
 
         &:hover {
             transition: all 0.1s ease-out;
@@ -293,6 +293,7 @@ span {
         &__tasks-container {
             display: flex;
             justify-content: space-evenly;
+            flex-wrap: wrap;
         }
     }
 }
@@ -345,6 +346,11 @@ span {
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 
