@@ -23,6 +23,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/pic.css" rel="stylesheet" type="text/css" />
     <link href="css/flexbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/dom.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -178,8 +179,20 @@
                                 <div class="b-task-item__icon"></div>
                                 <h3 class="b-task-item__title">Задание 3</h3>
                                 <p class="b-task-item__description">Использование функций на JS.</p>
-                                <button class="primary-btn" onclick="showParams()">
+                                <button class="primary-btn b-task-item__btn" onclick="showParams()">
                                     <span>Посчитать</span>
+                                </button>
+                            </div>
+                            <div class="b-tasks-container__task-item b-task_item">
+                                <div class="b-task-item__icon"></div>
+                                <h3 class="b-task-item__title">Задание 4</h3>
+                                <p class="b-task-item__description">Работа с DOM.</p>
+                                <div id="rand"></div>
+                                <button class="primary-btn b-task-item__btn" onclick="showNewQuote()">
+                                    <span>Создать</span>
+                                </button>
+                                <button class="primary-btn b-task-item__btn" onclick="changeEvenQuotes()">
+                                    <span>Перекрасить</span>
                                 </button>
                             </div>
                         </div>
@@ -208,6 +221,7 @@
     </div>
     <script src="./js/main.js"></script>
     <script src="./js/mathFunc.js"></script>
+    <script src="./js/dom.js"></script>
 </body>
 
 </html>

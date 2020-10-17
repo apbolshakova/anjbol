@@ -1,0 +1,30 @@
+#rand {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#rand p span {
+    color: #000000;
+    white-space: pre-wrap;
+}
+
+.class1 {
+    background-color: rgb(251, 212, 180);
+    
+}
+
+.class2 {
+    background-color: rgb(204, 192, 217);
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
