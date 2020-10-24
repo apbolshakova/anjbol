@@ -57,6 +57,22 @@ span {
     }
 }
 
+.secondary-btn {
+    padding: 12px;
+    width: 120px;
+    border: solid 3px $details_color;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba($color: #000000, $alpha: 0);
+
+    &:hover {
+        background-color: $details_color;
+        transition: all 0.2s ease-out;
+    }
+}
+
 .b-main-container {
     display: grid;
     grid-template-columns: 240px 1fr;
@@ -288,6 +304,8 @@ span {
 
         &__text-container {
             flex-basis: calc(50% - 20px);
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 
@@ -318,6 +336,15 @@ span {
 .b-text-container {
     &__paragraph {
         color: $medium_text;
+        margin-bottom: 12px;
+
+        &:last-of-type {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn {
+        align-self: flex-end;
     }
 }
 
@@ -434,6 +461,7 @@ span {
 
             &__text-container {
                 flex-basis: 100%;
+                justify-content: center;
             }
         }
 
@@ -503,6 +531,16 @@ span {
         &_portfolio {
             &__categories-container {
                 flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .b-task-item {
+        &__btn {
+            &:not(:last-of-type) {
+                margin-bottom: 12px;
             }
         }
     }

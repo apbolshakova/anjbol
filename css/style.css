@@ -38,6 +38,21 @@ span {
   transition: all 0.1s ease-out;
 }
 
+.secondary-btn {
+  padding: 12px;
+  width: 120px;
+  border: solid 3px #00a695;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+.secondary-btn:hover {
+  background-color: #00a695;
+  transition: all 0.2s ease-out;
+}
+
 .b-main-container {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -224,6 +239,8 @@ span {
 }
 .b-info-container_about__text-container {
   flex-basis: calc(50% - 20px);
+  display: flex;
+  flex-wrap: wrap;
 }
 .b-info-container_portfolio__categories-container {
   flex-basis: 100%;
@@ -243,6 +260,13 @@ span {
 
 .b-text-container__paragraph {
   color: #e0e0e0;
+  margin-bottom: 12px;
+}
+.b-text-container__paragraph:last-of-type {
+  margin-bottom: 24px;
+}
+.b-text-container__btn {
+  align-self: flex-end;
 }
 
 .b-categories-container {
@@ -333,6 +357,7 @@ span {
   }
   .b-info-container_about__text-container {
     flex-basis: 100%;
+    justify-content: center;
   }
   .b-info-container_tasks__tasks-container {
     flex-wrap: wrap;
@@ -379,5 +404,10 @@ span {
 
   .b-info-container_portfolio__categories-container {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .b-task-item__btn:not(:last-of-type) {
+    margin-bottom: 12px;
   }
 }
