@@ -103,7 +103,7 @@ span {
     }
 
     &__nav-menu-container {
-        padding: 40px 30px;
+        padding: 40px 0;
     }
 }
 
@@ -115,27 +115,34 @@ span {
 }
 
 .b-nav-menu-container {
+    &__link-wrapper {
+        cursor: pointer;
+    }
+
+}
+
+.b-link-wrapper {
     &__nav-menu-item {
+        padding-left: 30px;
         padding-bottom: 18px;
+
+        &:hover span {
+            color: $details_color;
+            transition: all 0.1s ease-out;
+        }
     }
 }
 
 .b-nav-menu-item {
     &__icon {
         font-size: 24px;
-        cursor: default;
     }
 
-    &__link {
+    &__text {
         font-size: 18px;
         font-weight: 700;
         padding-left: 12px;
         vertical-align: super;
-
-        &:hover {
-            color: $dark_text;
-            transition: all 0.1s ease-out;
-        }
     }
 }
 
@@ -171,7 +178,7 @@ span {
 
         &:hover {
             transition: all 0.1s ease-out;
-            color: $dark_text;
+            color: $details_color;
         }
 
         &_mobile-menu {
@@ -425,7 +432,7 @@ span {
                 margin-bottom: 30px;
             }
 
-            &__text {
+            &__text-container {
                 flex-basis: 100%;
             }
         }

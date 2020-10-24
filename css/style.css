@@ -77,7 +77,7 @@ span {
   padding: 40px 30px;
 }
 .b-nav-wrapper__nav-menu-container {
-  padding: 40px 30px;
+  padding: 40px 0;
 }
 
 .b-logo-container__logo {
@@ -85,23 +85,27 @@ span {
   height: 120px;
 }
 
-.b-nav-menu-container__nav-menu-item {
+.b-nav-menu-container__link-wrapper {
+  cursor: pointer;
+}
+
+.b-link-wrapper__nav-menu-item {
+  padding-left: 30px;
   padding-bottom: 18px;
+}
+.b-link-wrapper__nav-menu-item:hover span {
+  color: #00a695;
+  transition: all 0.1s ease-out;
 }
 
 .b-nav-menu-item__icon {
   font-size: 24px;
-  cursor: default;
 }
-.b-nav-menu-item__link {
+.b-nav-menu-item__text {
   font-size: 18px;
   font-weight: 700;
   padding-left: 12px;
   vertical-align: super;
-}
-.b-nav-menu-item__link:hover {
-  color: #6d6d6d;
-  transition: all 0.1s ease-out;
 }
 
 .b-scroll-wrapper__header-wrapper {
@@ -131,7 +135,7 @@ span {
 }
 .b-header-wrapper__icon:hover {
   transition: all 0.1s ease-out;
-  color: #6d6d6d;
+  color: #00a695;
 }
 .b-header-wrapper__icon_mobile-menu {
   font-size: 32px;
@@ -327,7 +331,7 @@ span {
     flex-basis: 100%;
     margin-bottom: 30px;
   }
-  .b-info-container_about__text {
+  .b-info-container_about__text-container {
     flex-basis: 100%;
   }
   .b-info-container_tasks__tasks-container {

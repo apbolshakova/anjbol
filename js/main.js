@@ -30,7 +30,7 @@ function portfolioTabsInit() {
 function mobileMenuInit() {
     let toggleBtn = document.querySelector(".b-header-wrapper__icon_mobile-menu");
     let menuWrapper = document.querySelector(".b-main-container__nav-wrapper");
-    let menuLinks = document.querySelectorAll(".b-nav-menu-item__link");
+    let menuLinks = document.querySelectorAll(".b-nav-menu-container__link-wrapper");
 
     toggleBtn.addEventListener("click", toggleMenu);
 
