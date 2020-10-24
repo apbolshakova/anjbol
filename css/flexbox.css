@@ -105,3 +105,9 @@
         max-width: 15em;
     }
 }
+
+@media (max-width: 400px) {
+    .flexbox {
+        max-width: 10em;
+    }
+}

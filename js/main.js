@@ -6,7 +6,8 @@ function portfolioTabsInit() {
         el.addEventListener("click", openTabs);
     });
 
-    function openTabs() {
+    function openTabs(e) {
+        if (e.target.classList.contains("active")) return;
         tabContent.forEach(function (el) {
             if (el.classList.contains("active")) {
                 el.classList.remove("active");
@@ -48,7 +49,6 @@ function mobileMenuInit() {
             e.target.innerHTML = "close";
             menuWrapper.classList.add("active");
         }
-        
     }
 
     function closeMenuOnLinkClick() {
