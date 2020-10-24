@@ -218,7 +218,7 @@ span {
   height: 360px;
   flex-basis: calc(50% - 20px);
 }
-.b-info-container_about__text {
+.b-info-container_about__text-container {
   flex-basis: calc(50% - 20px);
 }
 .b-info-container_portfolio__categories-container {
@@ -235,6 +235,10 @@ span {
 .b-title-container__title {
   display: inline;
   font-size: 36px;
+}
+
+.b-text-container__paragraph {
+  color: #e0e0e0;
 }
 
 .b-categories-container {

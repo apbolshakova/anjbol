@@ -279,7 +279,7 @@ span {
             flex-basis: calc(50% - 20px);
         }
 
-        &__text {
+        &__text-container {
             flex-basis: calc(50% - 20px);
         }
     }
@@ -305,6 +305,12 @@ span {
     &__title {
         display: inline;
         font-size: 36px;
+    }
+}
+
+.b-text-container {
+    &__paragraph {
+        color: $medium_text;
     }
 }
 
