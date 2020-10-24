@@ -345,6 +345,11 @@ span {
   font-size: 12px;
 }
 
+.b-contact-item__text {
+  vertical-align: super;
+  padding-left: 12px;
+}
+
 @media (max-width: 1023px) {
   .b-info-container__title-container {
     margin-bottom: 30px;
@@ -448,5 +453,13 @@ span {
   }
   .b-projects-container__item:not(:last-of-type) {
     margin-bottom: 24px;
+  }
+
+  .b-contact-item__icon {
+    font-size: 19px;
+  }
+  .b-contact-item__text {
+    font-size: 12px;
+    padding-left: 0;
   }
 }

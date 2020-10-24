@@ -445,6 +445,13 @@ span {
     }
 }
 
+.b-contact-item {
+    &__text {
+        vertical-align: super;
+        padding-left: 12px;
+    }
+}
+
 @media (max-width: 1023px) {
     .b-info-container {
         &__title-container {
@@ -602,6 +609,16 @@ span {
             &:not(:last-of-type) {
                 margin-bottom: 24px;
             }
+        }
+    }
+
+    .b-contact-item {
+        &__icon {
+            font-size: 19px;
+        }
+        &__text {
+            font-size: 12px;
+            padding-left: 0;
         }
     }
 }
