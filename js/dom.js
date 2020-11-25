@@ -27,7 +27,7 @@ function shuffle(array) {
       let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-  }
+}
 
 function showNewQuote() {
     if (curId == latinQuote.length) {
@@ -58,7 +58,7 @@ function showNewQuote() {
 }
 
 function changeEvenQuotes() {
-    let evenQuotes = document.querySelectorAll(".class1");
+    let evenQuotes = document.querySelectorAll("#rand .class1");
     evenQuotes.forEach(el => {
         el.classList.add("bold");
     });

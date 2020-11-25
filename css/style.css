@@ -409,6 +409,17 @@ span {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 767px) and (orientation: landscape) {
+  .b-main-container__nav-wrapper.active {
+    position: absolute;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .b-content-wrapper__article-wrapper_home {
+    min-height: 600px;
+  }
+}
 @media (max-width: 480px) {
   .b-task-item__btn:not(:last-of-type) {
     margin-bottom: 12px;
@@ -461,5 +472,10 @@ span {
   .b-contact-item__text {
     font-size: 12px;
     padding-left: 0;
+  }
+}
+@media (max-height: 600px) {
+  .b-content-wrapper__article-wrapper_home {
+    min-height: 600px;
   }
 }
