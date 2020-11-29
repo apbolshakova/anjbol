@@ -304,6 +304,9 @@ span {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+.b-tasks-container__task-item_big {
+  flex-basis: calc(100% - 100px);
+}
 .b-tasks-container__task-item:last-of-type {
   margin-bottom: 0;
 }

@@ -393,6 +393,10 @@ span {
         flex-wrap: wrap;
         margin-bottom: 30px;
 
+        &_big {
+            flex-basis: calc(100% - 100px);
+        }
+
         &:last-of-type {
             margin-bottom: 0;
         }

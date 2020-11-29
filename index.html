@@ -24,6 +24,7 @@
     <link href="css/pic.css" rel="stylesheet" type="text/css" />
     <link href="css/flexbox.css" rel="stylesheet" type="text/css" />
     <link href="css/dom.css" rel="stylesheet" type="text/css" />
+    <link href="css/drag-drop.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -205,6 +206,12 @@
                                     <span>Перекрасить</span>
                                 </button>
                             </div>
+                            <div class="b-tasks-container__task-item b-tasks-container__task-item_big b-task_item">
+                                <div class="b-task-item__icon"></div>
+                                <h3 class="b-task-item__title">Задание 5</h3>
+                                <p class="b-task-item__description">Перетаскивание объектов.</p>
+                                <div id="dragAndDrop"></div>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -230,8 +237,9 @@
         <a href="#home" class="material-icons b-main-container__up-btn">arrow_upward</a>
     </div>
     <script src="./js/main.js"></script>
-    <script src="./js/mathFunc.js"></script>
+    <script src="./js/math-func.js"></script>
     <script src="./js/dom.js"></script>
+    <script src="./js/drag-drop.js"></script>
 </body>
 
 </html>
