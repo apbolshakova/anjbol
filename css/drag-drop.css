@@ -8,18 +8,47 @@
     height: 25em;
 }
 
-.shadowed {
-    filter: drop-shadow(2px 5px 3px rgba(255,255,255,0.5));
+#dragAndDrop div:hover {
+    filter: drop-shadow(2px 5px 3px rgba(0,0,0,0.5));
 }
 
-@media (max-width: 600px) {
-    #dragAndDrop {
-        font-size: 13px;
+#dragAndDrop.gradient {
+    background: linear-gradient(225deg, #114b5f, #88d498, #f3e9d2);
+    background: -webkit-linear-gradient(225deg, #114b5f, #88d498, #f3e9d2);
+    background-size: 300% 300%;
+    animation: GradientAnimation 20s ease infinite;
+    -webkit-animation: GradientAnimation 20s ease infinite;
+}
+
+#dragAndDrop .congratsText {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 2px 3px 4px #000000;
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
     }
 }
 
-@media (max-width: 400px) {
-    #dragAndDrop {
-        font-size: 9px;
+@-webkit-keyframes GradientAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
     }
 }
